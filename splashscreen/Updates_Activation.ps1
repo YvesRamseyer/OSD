@@ -16,19 +16,19 @@
 $Scripts2run = @(
   @{
     Name = "Enabling built-in Windows Producy Key"
-    Script = "http://10.57.208.242/Windows-KeyActivation.ps1"
+    Script = "https://github.com/YvesRamseyer/OSD/blob/main/Windows-KeyActivation.ps1"
   },
   @{
     Name = "Windows Quality Updates"
-    Script = "http://10.57.208.242/Windows-Updates_Quality.ps1"
+    Script = "https://github.com/YvesRamseyer/OSD/blob/main/Windows-Updates_Quality.ps1"
   },
   @{
     Name = "Windows Firmware and Driver Updates"
-    Script = "http://10.57.208.242/Windows-Updates_DriverFirmware.ps1"
+    Script = "https://github.com/YvesRamseyer/OSD/blob/main/Windows-Updates_DriverFirmware.ps1"
   },
   @{
     Name = "Saving Logs and Cleanup"
-    Script = "http://10.57.208.242/OSDCloud-CleanUp.ps1"
+    Script = "https://github.com/YvesRamseyer/OSD/blob/main/OSDCloud-CleanUp.ps1"
   }
 )
 
@@ -39,3 +39,4 @@ Install-PackageProvider -Name NuGet -Force | Out-Null
 Install-Script Start-SplashScreen -Force | Out-Null
 
 Start-SplashScreen.ps1 -Processes $Scripts2run
+
